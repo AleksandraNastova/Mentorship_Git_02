@@ -1,0 +1,443 @@
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+  1. Header 
+      - Header logo
+      - Navigation menu
+      - Banner
+      - Header button
+
+  2. Products section
+      - Text box
+      - Background images
+  
+  3. Feature and services section
+      - Text boxes
+      - Input email form with subscribe button
+  
+  4. Footer
+      - Social icons
+      - Text box
+ 
+
+-------------------------------------------------------------------*/
+
+
+/* Resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Fonts */
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+
+/* Colors */
+.color-white {
+  color: white;
+}
+
+.color-grey {
+  color: rgb(105, 104, 104);
+}
+
+.bg-color-grey {
+  background-color: rgba(247,247,247,255);
+}
+
+.bg-color-darkgrey {
+  background-color: rgba(65,74,79,255);
+}
+
+.color-blue {
+  color: rgba(39,145,229,255);
+}
+
+
+/* Common classes */
+.flex {
+  display: flex;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+
+/* ------ */
+/* Header */
+/* ------ */
+.header {
+  background-blend-mode: soft-light;
+  background-color: rgb(88, 82, 82);
+  background-image: url(../code/images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.header-inner {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* Header logo */
+.header-logo {
+  flex-basis: 15%;
+}
+
+/* Navigation menu */
+.nav-menu {
+  flex-basis: auto;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-menu ul li:nth-child(2),
+.nav-menu ul li:nth-child(3), 
+.nav-menu ul li:nth-child(4) {
+  margin-left: 20px;
+}
+
+.header-logo a,
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a {
+  font-size: 0.9rem;
+}
+
+
+/* Banner */
+.banner {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner button,
+.email-form button {
+  background-color: rgba(39,145,229,255);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.banner button:hover,
+.email-form button:hover,
+.social-icons i:hover {
+  background-color: rgb(10, 64, 134);
+}
+
+.header-inner a:hover {
+  color: rgb(10, 64, 134);
+}
+
+/* ---------------- */
+/* Products section */
+/* ---------------- */
+.products-text-box,
+.services-text-box {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.products-text-box p,
+.services-text-box p,
+.services-box-wrapper {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.hr {
+  border-bottom: 2px solid rgba(39,145,229,255);
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.products-images-wrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto;
+  row-gap: 30px;
+  width: 95%;
+}
+
+.small-image-box {
+  flex-basis: 39%;
+}
+
+.large-image-box {
+  flex-basis: 59%;
+}
+
+.small-image-box-item,
+.large-image-box-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+}
+
+.coast-img {
+  background-image: url(../code/images/coast.jpg);
+}
+
+.island-img {
+  background-image: url(../code/images/island.jpg);
+}
+
+.baloon-img {
+  background-image: url(../code/images/balloon.jpg);
+}
+
+.mountain-img {
+  background-image: url(../code/images/mountain.jpg);
+}
+
+
+/* ----------------------------- */
+/* Features and services section */
+/* ----------------------------- */
+.services,
+.products-inner {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.services-box-wrapper {
+  justify-content: space-between;
+  margin: 0 auto 150px;
+  width: 90%;
+}
+
+.services-box-item {
+  flex-basis: 30%;
+}
+
+.services-text-box .hr {
+  margin-bottom: 50px;
+}
+
+.email-form {
+  justify-content: center;
+  margin: 0 auto;
+}
+.email-form input {
+  border: 1px solid lightgray;
+  margin-right: 20px;
+  padding: 7px;
+  width: 30%;
+}
+
+
+/* ------ */
+/* Footer */
+/* ------ */
+.footer-main {
+  padding: 60px 0;
+}
+
+.social-icons {
+  margin-bottom: 30px;
+}
+
+.social-icons a:nth-child(2),
+.social-icons a:nth-child(3),
+.social-icons a:nth-child(4),
+.social-icons a:nth-child(5) {
+  margin-left: 10px;
+}
+
+.footer-main p:nth-child(3) {
+  margin-bottom: 0;
+}
+
+
+/*---------------------------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* Media query - Max width 768px, Tablet view */
+/* ------------------------------------------ */
+
+@media (max-width: 768px) {
+.header-inner {
+  width: 90%;
+}
+
+.products-images-wrapper {
+  flex-direction: column;
+  width: 90%;
+}
+
+.small-image-box-item,
+.large-image-box-item {
+  height: 30vh;
+}
+
+.products-text-box {
+  width: 80%;
+}
+
+.services-box-wrapper{
+  flex-direction: column;
+}
+
+.email-form {
+  flex-direction: column;
+}
+
+.email-form input {
+  margin: 0 auto 20px;
+  width: 70%;
+}
+
+.email-form button {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.services-text-box {
+  width: 80%;
+}
+
+.services-box-item {
+  margin: 0 auto;
+  width: 50%;
+}
+}
+
+
+
+/* ------------------------------------------ */
+/* Media query - Max width 425x, Mobile view */
+/* ------------------------------------------ */
+
+@media (max-width: 425px) {
+body {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.nav-menu a {
+  font-size: 1.1rem;
+}
+
+.header-logo a {
+  font-size: 1.7rem;
+}
+
+.nav-menu ul li:nth-child(2),
+.nav-menu ul li:nth-child(3), 
+.nav-menu ul li:nth-child(4) {
+  margin-left: 40px;
+}
+
+.header ul {
+  padding-inline-start: 0;
+}
+
+.header-inner {
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100%; 
+}
+
+.banner-text {
+  width: 70%;
+}
+
+.products-text-box {
+  width: 70%;
+}
+
+.products-images-wrapper {
+  width: 70%;
+}
+
+.hr {  
+  margin-bottom: 80px;
+  margin-top: 30px; 
+  width: 60%;
+}
+
+.small-image-box-item,
+.large-image-box-item {
+  height: 45vh;
+}
+
+.email-form {
+  flex-direction: column;
+}
+
+.email-form input {
+  margin: 0 auto 20px;
+  padding: 15px;
+  width: 80%;
+}
+
+.email-form button {
+  margin: 0 auto;
+  padding: 20px 20px;
+  width: 50%;
+}
+
+.footer-main {
+  padding: 60px 15px;
+}
+.footer-main P {
+  font-size: 1rem;
+}
+
+.social-icons i {
+  font-size: xx-large;
+}
+
+.word-break {
+  display: block;
+  margin-top: 5px;
+}
+}
